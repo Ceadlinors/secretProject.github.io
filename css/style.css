@@ -32,6 +32,9 @@ p{
     align-items: center;
 }
 
+h1{
+    font-size: 300%;
+}
 #mainMessage{
     height: fit-content;
     text-align: center;
@@ -46,7 +49,7 @@ p{
     background-color: #b0e0e6;
     margin: 5px;
     box-shadow: 0 5px #7c8b8d;
-    font-size: 18px;
+    font-size: 20px;
 }
 
     .next_back:hover{
