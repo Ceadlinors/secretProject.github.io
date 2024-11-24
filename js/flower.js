@@ -8,22 +8,22 @@ const d8 = document.getElementById("p8");
 
 setTimeout(() => {
     d2.classList.add('show');
-}, 300);
+}, 310);
 setTimeout(() => {
     d3.classList.add('show');
-}, 600);
+}, 610);
 setTimeout(() => {
     d4.classList.add('show');
-}, 900);
+}, 910);
 setTimeout(() => {
     d5.classList.add('show');
-}, 1100);
+}, 1110);
 setTimeout(() => {
     d6.classList.add('show');
-}, 1400);
+}, 1410);
 setTimeout(() => {
     d7.classList.add('show');
-}, 1700);
+}, 1710);
 setTimeout(() => {
     d8.classList.add('show');
-}, 2000);
+}, 2010);
