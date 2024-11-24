@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+:root{
+    --timeA: 0s;
+    --colorH: #8b0b0b
+}
+
+*{
+    font-family: "Delius", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #faf9df;
+}
+
+p{
+    font-size: 22px;
+    margin: 0 50px;
+    height: fit-content;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainMessage{
+    height: fit-content;
+    text-align: center;
+}
+
+/* buttons  */
+
+.next_back{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b0e0e6;
+    margin: 5px;
+    box-shadow: 0 5px #7c8b8d;
+    font-size: 18px;
+}
+
+    .next_back:hover{
+        cursor: pointer;
+        background-color: #82cfda;
+    }
+
+    .next_back:active{
+        box-shadow: 0 2px #576263;
+        transform: translateY(3px);
+    }
+
+.buttons{
+    margin-top: 20px;
+}
+
+/* heart button */
+
+.wrapper{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.heartBtn{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: var(--colorH);
+    top: 50px;
+    left: 50px;
+    border: none;
+    transform: rotate(45deg);
+}
+
+.heartBtn:focus, .heartBtn:hover{
+    outline: none;
+    background-color: var(--colorH);
+}
+
+.heartBtn::before, .heartBtn::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: var(--colorH);
+    border-radius: 50%;
+}
+
+.heartBtn::before{
+    top: -50px;
+    left: 0;
+}
+
+.heartBtn::after{
+    top: 0;
+    left: -50px;
+}
+
+    /* beating */
+
+    .beat{
+        height: 100px;
+        width: 100px;
+        background-color: var(--colorH);
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        transform: rotate(45deg);
+        animation: beating var(--timeA) infinite;
+    }
+
+    .beat:hover{
+        cursor: pointer;
+    }
+    
+    .beat::before, .beat::after{
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: var(--colorH);
+        border-radius: 50%;
+    }
+
+    .beat::before{
+        top: -50px;
+        left: 0;
+    }
+    
+    .beat::after{
+        top: 0;
+        left: -50px;
+    }
+
+    @keyframes beating {
+        to{
+            transform: rotate(45deg) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+#box2_2 *{
+    margin-left: 50px;
+}

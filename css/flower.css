@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+*{
+    font-family: "Delius", cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #faf9df;
+}
+
+.container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.next_back{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #b0e0e6;
+    margin: 5px;
+    box-shadow: 0 5px #7c8b8d;
+    font-size: 18px;
+}
+
+    .next_back:hover{
+        cursor: pointer;
+        background-color: #82cfda;
+    }
+
+    .next_back:active{
+        box-shadow: 0 2px #576263;
+        transform: translateY(3px);
+    }
+
+.wrapper{
+    width: 300px;
+    height: 200px;
+    position: relative;
+    scale: 0.75;
+}
+
+.petal{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+.p1{
+    top: 0;
+    left: 50px;
+    background: #b0e0e6;
+    background: linear-gradient(135deg, #c71585 0%, #324ab2 50%, #b0e0e6 100%);
+    border-radius: 0 50px;
+    z-index: 4;
+    animation: scale 2s linear;
+    transform-origin: bottom right;
+}
+.p2{
+    top: 0px;
+    left: 50px;
+    background: #b0e0e6;
+    background: linear-gradient(135deg, #c71585 0%, #324ab2 50%, #b0e0e6 100%);
+    rotate: 45deg;
+    border-radius: 0 50px;
+    z-index: 5;
+    animation: scale 2s linear;
+    animation-delay: 0.3s;
+    transform-origin: bottom right;
+    visibility: hidden;
+}
+.p3{
+    top: 0;
+    left: 150px;
+    background: #b0e0e6;
+    background: linear-gradient(45deg, #b0e0e6 0%, #324ab2 50%, #c71585 100%);
+    border-radius: 50px 0;
+    z-index: 6;
+    animation: scale 2s linear;
+    animation-delay: 0.6s;
+    transform-origin: bottom left;
+    visibility: hidden;
+}
+.p4{
+    top: 0px;
+    left: 150px;
+    background: #b0e0e6;
+    background: linear-gradient(45deg, #b0e0e6 0%, #324ab2 50%, #c71585 100%);
+    border-radius: 50px 0;
+    rotate: 45deg;
+    z-index: 7;
+    animation: scale 2s linear;
+    animation-delay: 0.9s;
+    transform-origin: bottom left;
+    visibility: hidden;
+}
+.p5{
+    top: 100px;
+    left: 150px;
+    background: #b0e0e6;
+    background: linear-gradient(135deg, #b0e0e6 0%, #324ab2 50%, #c71585 100%);
+    border-radius: 0 50px;
+    z-index: 8;
+    animation: scale 2s linear;
+    animation-delay: 1.1s;
+    transform-origin: top left;
+    visibility: hidden;
+}
+.p6{
+    top: 100px;
+    left: 150px;
+    background: #b0e0e6;
+    background: linear-gradient(135deg, #b0e0e6 0%, #324ab2 50%, #c71585 100%);
+    rotate: 45deg;
+    border-radius: 0 50px;
+    z-index: 0;
+    animation: scale 2s linear;
+    animation-delay: 1.4s;
+    transform-origin: top left;
+    visibility: hidden;
+}
+.p7{
+    top: 100px;
+    left: 50px;
+    background: #b0e0e6;
+    background: linear-gradient(45deg, #c71585 0%, #324ab2 50%, #b0e0e6 100%);
+    border-radius: 50px 0;
+    z-index: 2;
+    animation: scale 2s linear;
+    animation-delay: 1.7s;
+    transform-origin: top right;
+    visibility: hidden;
+}
+.p8{
+    top: 100px;
+    left: 50px;
+    background: #b0e0e6;
+    background: linear-gradient(45deg, #c71585 0%, #324ab2 50%, #b0e0e6 100%);
+    rotate: 45deg;
+    border-radius: 50px 0;
+    z-index: 3;
+    animation: scale 2s linear;
+    animation-delay: 2s;
+    transform-origin: top right;
+    visibility: hidden;
+}
+
+.circle{
+    top: 75px;
+    left: 125px;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #324ab2;
+    background: radial-gradient(circle, #fff941 0%, #c71585 100%);
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.stick{
+    top: 80px;
+    left: 145px;
+    position: absolute;
+    height: 60vh;
+    width: 10px;
+    background: radial-gradient(circle, #62c71f 0%, #0b6d25 100%);
+    z-index: -1;
+}
+
+.leaf{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    top: 250px;
+    left: 175px;
+    z-index: -2;
+    background: radial-gradient(circle, #62c71f 0%, #0b6d25 100%);
+    rotate: 45deg;
+    border-radius: 50px 0;
+}
+
+.show{
+    visibility: visible;
+}
+
+
+@keyframes scale {
+    0%{
+        transform: scale(0.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+.hearts{
+    font-size: 23px;
+    font-weight: bold;
+    position: fixed;
+    top: -1vh;
+    left: 0;
+    animation: falling 1s ease-in infinite;
+}
+
+@keyframes falling {
+    to{
+        transform: translateY(250vh);
+    }
+}

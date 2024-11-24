@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILY</title>
+    <link rel="icon" href="images/heart.png" type="image/png">
+    <link rel="stylesheet" href="css/flower.css">
+</head>
+<body id="bd">
+    <div class="container">
+        <div class="wrapper">
+            <div class="petal p1" id="p1"></div>
+            <div class="petal p2" id="p2"></div>
+            <div class="petal p3" id="p3"></div>
+            <div class="petal p4" id="p4"></div>
+            <div class="petal p5" id="p5"></div>
+            <div class="petal p6" id="p6"></div>
+            <div class="petal p7" id="p7"></div>
+            <div class="petal p8" id="p8"></div>
+            <div class="circle"></div>
+            <div class="stick"></div>
+            <div class="leaf"></div>
+        </div>
+    </div>   
+    <div class="box">
+        <p>Here's a flower for you :> (almost as pretty as you)</p>
+        <p>Need a little more love?</p>
+        <div>
+            <button class="next_back" onclick="isStop = false; setInterval(hearts, 100)">more love</button>
+            <button class="next_back" onclick="isStop = true">stop the love</button>
+        </div>
+    </div>
+    <script src="js/flower.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>

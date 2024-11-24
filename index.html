@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILY</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/heart.png" type="image/png">
+</head>
+<body>
+    <div class="container" id="box1">
+        <h1 id="mainMessage">Hi love!</h1>
+        <br>
+        <div class="buttons">
+            <button onclick="previousMessage()" class="next_back">back</button>
+            <button onclick="nextMessage()" class="next_back">next</button>
+        </div>
+    </div>
+    <div class="container" id="box2">
+        <div class="wrapper">
+            <button class="heartBtn"></button>
+            <div class="beat" id="heart_btn"></div>
+        </div>
+        <div id="box2_1">
+            <p>Oh no the heart isn't beating! You need to do a CPR utill it changes color! Click it to make it beat faster!
+            </p>
+        </div>
+        <div id="box2_2" style="display: none;">
+            <p>Congratulation you did it! You just saved a heart! But actually you already did that. Every day you make my heart happy by being in my life. It's an honour to be able to call you my friend <3</p>
+            <br>
+            <p>Anyway let's not get too mushy you deserve a reward for doing so amazing CPR! You can collect it here:</p>
+            <button class="next_back" onclick="location.href='flower.html'">click me</button>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script src="js/heart.js"></script>
+</html>
