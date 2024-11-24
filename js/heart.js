@@ -9,7 +9,7 @@ var rootStyles = getComputedStyle(root);
 let beats = 5;
 
 function fasterBeating(){
-    beats -= 0.2;
+    beats -= 0.1;
     if(beats < 0.5){
         root.style.setProperty('--colorH', 'red');
         changeMessage();
