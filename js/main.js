@@ -4,7 +4,7 @@ const box1 = document.getElementById("box1");
 const box2 = document.getElementById("box2");
 box2.style.display = "none"
 
-const messages = ["Hi love!", "I know you weren't felling the best lately,", "so I figured I'd make something for you.", "Keep in mind that I haven't done this in a while.", "Alright, here it is...", "3", "2", "1"];
+const messages = ["Hi love!", "I know you weren't feeling the best lately,", "so I figured I'd make something for you.", "Keep in mind that I haven't done this in a while.", "Alright, here it is...", "3", "2", "1"];
 
 let index = 0;
 
